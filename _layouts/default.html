@@ -1,16 +1,3 @@
-<!DCTYPE html>
-
-<head>
-	<title>
-	{% if page.title %}{{ page.title }} {% endif %}|{{ site.title }}
-	</title>
-</head>
-<body>
-	{include header.html>
-	<div>
-	{{ content }}
-	</div>
-	{include footer.html}
-</body>
-~
-
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
